@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <script src="./main.js" defer></script>
+    <form id="taskForm" action="" method="#">
+        <div id="inputFields">
+            <div>
+                <label for="taskName">Task: </label>
+                <input type="text" id="taskName" placeholder="Input Task Name Here" required />
+            </div>
+            <div>
+                <label for="date">Date: </label>
+                <input type="date" id="date" required />
+            </div>
+            <div>
+                <label for="Time">Time: </label>
+                <input type="time" id="time" required />
+            </div>
+        </div>
+        <input type="button" value="Add Task" id="submit" />
+    </form>
+    <p id="warning"></p>
+    <div id="main">
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 50%;">Task</th>
+                    <th scope="col" style="width: 20%;">Date</th>
+                    <th scope="col" style="width: 10%;">Time</th>
+                    <th scope="col" style="width: 20%;">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #E7F2F8;
+}
+
+#main {
+    background-color: #74BDCB;
+    min-height: 80vh;
+    padding: 10px 0;
+}
+
+#taskForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media screen and (max-width: 329px) {
+    #taskForm {
+        flex-direction: column;
+    }
+}
+
+#inputFields {
+    display: flex;
+}
+
+#inputFields div {
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 505px) {
+    #inputFields {
+        flex-direction: column;
+    }
+    #inputFields div {
+        margin: 5px 0px;
+    }
+}
+
+#warning {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+#taskTable {
+    width: 85%;
+    margin: 0 auto;
+    border: #E7F2F8 2px solid;
+}
+
+#taskTable thead {
+    background-color: #FFA384;
+    color: #E7F2F8;
+}
+
+#taskTable tbody tr {
+    background-color: #EFE7BC;
+    color: black;
+    text-align: center;
+}
